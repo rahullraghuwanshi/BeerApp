@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll_img_bg"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rect_bg"
+            android:padding="1.5dp">
+
+            <ImageView
+                android:id="@+id/img_beer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beer_holder" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rect_bg_card"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Trashy Blonde" />
+
+            <TextView
+                android:id="@+id/txt_tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed-light"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                tools:text="You Know You Shouldn't" />
+
+            <TextView
+                android:id="@+id/txt_first_brewed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_tagline"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="106dp"
+                android:layout_toStartOf="@+id/btn_add"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed-light"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                tools:text="04/2008" />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:drawableLeft="@drawable/ic_add"
+                android:drawableTint="@color/purple_500"
+                android:text="Buy" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
